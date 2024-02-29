@@ -12,13 +12,19 @@
 <body>
     <nav>
         <a href="#">Home</a>
-        <a href="#">Compras</a>
+        <a href="adicionar_produto.html" target="_blank">Compras</a>
         <a href="#">Sobre</a>
-        <a href="#">Contato</a>
-        <a href="#">Login</a>
-        <a href="#">Meu carrinho</a>
+        <a href="#faleconosco">Contato</a>
+        <a href="login.html">Login</a>
+        <a href="#" id="meuCarrinho">Meu Carrinho</a>
     </nav>
     <!-- Carrossel -->
+    <section id="carrinho" style="display: none;">
+        <ul id="listaItensCarrinho">
+            <li>Coca-cola</li>
+            <li>Batata-frita</li>
+        </ul>
+    </section>
     <section id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -83,7 +89,7 @@
             </section>
         </section>  
     </section>
-    <section id="falecomigo">
+    <section id="faleconosco">
         <h2>Fale conosco</h2>
         <form id="meuFormulario" action="dosomething.html" method="POST">
             <p class="campos">

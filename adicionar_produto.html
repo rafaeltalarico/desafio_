@@ -1,0 +1,28 @@
+<!-- Página onde o usuário adicionará produtos -->
+<body>
+    <h2>Adicionar Produto</h2>
+    <label for="produto">Nome do Produto:</label><br>
+    <input type="text" id="produto" name="produto"><br><br>
+    <button onclick="adicionarProduto()">Adicionar</button>
+
+    <script>
+        function adicionarProduto() {
+            // Recupera o nome do produto do campo de texto
+            var produto = document.getElementById("produto").value;
+
+            // Adiciona o nome do produto ao carrinho
+            adicionarAoCarrinho(produto);
+
+            // Limpa o campo de texto
+            document.getElementById("produto").value = "";
+        }
+
+        function adicionarAoCarrinho(produto) {
+            // Aqui você pode implementar a lógica para adicionar o produto ao carrinho
+            // Por exemplo, você pode armazenar os produtos em uma lista em JavaScript
+            // ou pode enviar os dados para um servidor usando AJAX.
+            // Neste exemplo, apenas exibiremos o produto no console.
+            console.log("Produto adicionado ao carrinho: " + produto);
+        }
+    </script>
+</body>
