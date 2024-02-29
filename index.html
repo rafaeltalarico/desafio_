@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Prático</title>
+    <script src="app.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            width: 1440px;
+            overflow-x: hidden;
+        }
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0; /* espaço de 10px nas bordas verticais e 0 nas horizontais */
+            text-align: center;
+            width: 100%;
+           
+            
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none; /* menus sem nenhuma marcação */
+            padding: 10px 20px;  /* espaço entre os menus */
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        .principal {
+            max-width: 100%;
+            height: 939px;
+        }
+
+        section h1 {
+            position: absolute;
+            top: 5%;
+            left: 25%;
+            color: #fff;
+            font-weight: bold;
+            font-size: 80px; 
+            text-align: center;  
+        }
+
+        #pedido {
+            position: absolute;
+            top: 140%;
+            left: 45%;
+            text-align: center;
+            font-size: 35px; 
+        }
+
+        .imagem_cadastro {
+            width: 389px;
+            height: 796px;
+            margin-top: 150px;
+            padding-left: 200px;
+        }
+
+        .moto {
+            width: 674px;
+            height: 679px;
+            padding-left: 200px;
+            
+        }
+
+        .donut {
+            width: 389px;
+            height: 796px;
+            margin-top: 150px;
+            padding-left: 850px;
+        }
+
+        
+
+        .passo {
+        position: relative;
+        left: 100px;
+        display: inline-block;
+        bottom: 300px;
+        
+        }
+        h3 {
+            padding: 40px;
+           
+        }
+        
+        .promo {
+        position: relative;
+        left: 100px;
+        display: inline-block;
+        bottom: 140px;
+        }
+        
+        .buscas {
+        position: relative;
+        left: 300px;
+        display: inline-block;   
+        bottom: 500px;
+        }
+
+        .carne {
+            height: 226px;
+            width: 348px;
+            left: 400px;
+            
+        }
+
+        .buscas > aside {
+            font-weight: bold;
+            margin-left: 85px;
+        }
+
+        .buscas > h3 {
+            font-weight: bold;
+            margin-left: 85px;
+            
+        }
+
+        #proximo {
+            position: relative;
+            display: inline-block;
+            left: 1070px;
+            bottom: 100px;
+        }
+
+        #falecomigo {
+            background-color: rgb(17, 88, 146);  
+        }
+
+        .resumo-fieldset {
+            text-align: center;
+        }
+
+
+        legend {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Compras</a>
+        <a href="#">Sobre</a>
+        <a href="#">Contato</a>
+        <a href="#">Login</a>
+        <a href="#">Meu carrinho</a>
+    </nav>
+    <section>
+        <img src="imagens/fast_food.jpg" class="principal" />
+            <h1>EMPÓRIO DELIVERY<br /></h1>
+            <button id="pedido">Faça seu pedido<br /></button>
+    </section>
+    <section>
+        <img src="imagens/imagem_cadastro.jpg" class="imagem_cadastro"/>
+            <div class="passo">
+                <h2>Veja como é fácil fazer seu pedido:</h2>
+                
+                    <h3>1.Realize seu cadastro</h3>
+                    <h3>2.Busque seu produto</h3>
+                    <h3>3.Confirme o pagamento</h3>
+                    <h3>4.Pronto! Agora é só esperar seu pedido chegar!</h3>
+            </div>
+    </section>
+    <section>
+        <div class="grupo-produtos">
+            <img src="imagens/moto.jpg" class="moto"/>
+            
+            <div class="promo">
+                <h2>Confira as principais ofertas</h2>
+                <img src="imagens/macarrao.jpg " />
+                    <aside>Macarrão Barilla: R$6,49</aside>
+                <img src="imagens/azeite.jpg " />
+                    <aside>Azeite Andorinha: R$38,99</aside>
+                
+            </div>
+        </div>
+<!--        <div class="grupo-produtos">
+            <img src="imagens/detergente.jpg " />
+                <aside>Detergente Ypê: R$2,19</aside>
+            <img src="imagens/oleo_coco.jpg " />
+                <aside>Óleo de coco: R$28,00</aside>
+        </div>   !-->
+        <button id="proximo">>></button>
+    </section>
+    <section>
+        <div class="mais_buscados">
+            <img src="imagens/donut.jpg" class="donut"/>
+    
+                <div class="buscas">
+                    <h3>Mais buscados</h3>
+                        <img src="imagens/carne.jpg" class="carne"/>
+                            <aside>Filé Mignon 100g: R$7,49</aside>  
+                </div>
+        </div>
+    </section>
+    <section id="falecomigo">
+        <h2>Fale conosco</h2>
+        <form action="dosomething.html" method="POST">
+            <p class="campos">
+                <label for="name" class="label-standard">Nome</label>
+                <input type="text" id="name" name="name" required />
+            </p>
+            <p class="campos">
+                <label for="email" class="label-standard">Email</label> 
+                <input type="email" id="email" name="email" />    
+            </p>
+            <p class="campos">
+                <label for="motivodocontato" class="label-standard">Qual o motivo do 
+                contato?</label>
+                <select id="motivodocontato" name="motivodocontato">
+                    
+                    <option value="duvidas">Dúvidas</option>
+                    <option value="reclamacoes">Reclamações</option>
+                    <option value="outros">Outros assuntos</option>
+                </select>
+            </p>
+            <p class="campos">
+                <label for="comentarios" class="label-standard">Comentários</label>
+                <textarea id="comentarios" name="comentarios" rows="3"></textarea>
+                
+            </p>
+            <button id="enviar" >Enviar</button>
+            <fieldset class="resumo-fieldset">
+                <legend>Nossos endereços</legend>
+            
+                <p>
+                    <label for="contatolinha1"><strong>Rua dos sabiás, 100 
+                    - São Paulo/SP</strong></label>
+                    
+                </p>
+                <p>
+                    <label for="contatolinha2"><strong>Rua Francisco Moreira, 
+                    660 - Fortaleza/CE</strong></label>
+                    
+                </p>
+                
+            </fieldset>
+            <p>
+                
+            </p>
+            </form>
+    </section>
+</body>
+</html>
