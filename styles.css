@@ -1,0 +1,99 @@
+
+body {
+    font-family: Arial, sans-serif; 
+    margin: 0; /* Removendo margens externas */
+    padding: 0; /* Removendo preenchimento interno */
+    max-width: 1440px; /* Largura máxima */
+    overflow-x: hidden; /* Oculta a barra de rolagem horizontal */
+}
+
+nav {
+    background-color: #333; 
+    padding: 10px 0; /* Espaçamento interno na barra de navegação */
+    text-align: center; /* Alinhamento do texto */
+    width: 100%; /* Largura da barra de navegação */
+}
+
+nav a {
+    color: #fff; /* Cor do texto dos menus na barra de navegação */
+    text-decoration: none; /* Remove os sublinhado dos links */
+    padding: 10px 20px; /* Espaçamento interno dos links */
+}
+
+
+h1 {
+    position: absolute; /* Posição absoluta */
+    top: 5%; /* Distância do topo */
+    left: 25%; /* Distância da esquerda */
+    color: #fff; /* Cor do texto */
+    font-weight: bold; /* Fonte negrito */
+    font-size: 80px; /* Tamanho da fonte */
+    text-align: center; /* Alinhamento do texto */
+}
+
+.carousel-item > p {
+    font-size: 40px; /* Tamanho da fonte */
+    position: absolute; /* Posição absoluta */
+    top: 5%; /* Distância do topo */
+    left: 15%; /* Distância da esquerda */
+    color: #fff; /* Cor do texto */
+}
+
+.imagem_cadastro {
+    width: 389px; /* Largura da imagem */
+    height: 796px; /* Altura da imagem */
+    margin-top: 150px; /* Espaço superior */
+    padding-left: 200px; /* Espaço à esquerda */
+    object-fit: cover; /* Redimensiona a imagem para cobrir a caixa delimitadora */
+}
+
+.donut {
+    width: 674px; /* Largura da imagem */
+    height: 679px; /* Altura da imagem */
+    padding-left: 200px; /* Espaço à esquerda */
+    margin-top: -20px; /* Deslocamento para cima */
+}
+
+.passo {
+    position: absolute; /* Posição absoluta */
+    left: 30%; /* Distância da esquerda */
+    display: inline-block; /* Bloco em linha */
+    margin-top: 150px; /* Espaço superior */
+}
+
+h3 {
+    padding: 40px; /* Espaçamento interno entre os passos para cadastro*/
+}
+
+.grupo-produtos {
+    display: flex; /* Define o grupo como um contêiner flexível */
+    align-items: flex-start; /* Alinha os itens verticalmente */
+    margin-bottom: 100px; /* Margem inferior */
+    margin-top: 100px; /* Margem superior */
+    margin-left: 4px; /* Margem à esquerda */
+}
+
+.carousel-item img {
+    max-width: 100%; /* Largura máxima da imagem */
+    height: auto; /* Altura automática */
+}
+
+.grupo-produtos .donut {
+    margin-right: 150px; /* Espaçamento à direita */
+}
+
+
+#falecomigo {
+    background-color: rgb(40, 98, 146); /* Cor de fundo */
+    color: black;
+}
+
+.resumo-fieldset {
+    text-align: center; /* Alinhamento do texto */
+    color: black;
+}
+
+legend {
+    font-weight: bold; /* Define o peso da fonte como negrito */
+    color: black;
+}
