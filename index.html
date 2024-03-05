@@ -7,12 +7,23 @@
     <style>
         body {
             font-family: "Poppins", sans-serif;
-            margin: 50px 50px 0 50px;
+            
             background-color: #faf9f6;
-            max-width: 1440px;
-            justify-content: center;
+            
             
         }
+        nav {
+    background-color: #333; 
+    padding: 10px 0; /* Espaçamento interno na barra de navegação */
+    text-align: center; /* Alinhamento do texto */
+    /* Largura da barra de navegação */
+        }
+
+        nav a {
+    color: #fff; /* Cor do texto dos menus na barra de navegação */
+    text-decoration: none; /* Remove os sublinhado dos links */
+    padding: 10px 20px; /* Espaçamento interno dos links */
+    }
         .container1 {
             display: flex;
             align-items: flex-start;
@@ -150,6 +161,14 @@
     </style>
 </head>
 <body>
+    <nav>
+        <a href="#">Home</a>
+        <a href="adicionar_produto.html" target="_blank">Compras</a>
+        <a href="#">Sobre</a>
+        <a href="#faleconosco">Contato</a>
+        <a href="login.html">Login</a>
+        <a href="#" id="meuCarrinho">Meu Carrinho</a>
+    </nav>
     <section>
         <div class="principal">
             <img class="groceries" src="imagens/groceries.svg" alt="groceries">
