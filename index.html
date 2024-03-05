@@ -1,134 +1,234 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desafio Prático</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles.css">
-    <script src="app.js"></script>
-    
+    <title>Document</title>
+    <style>
+        body {
+            font-family: "Poppins", sans-serif;
+            margin: 50px 50px 0 50px;
+            background-color: #faf9f6;
+            max-width: 1440px;
+            justify-content: center;
+            
+        }
+        .container1 {
+            display: flex;
+            align-items: flex-start;
+            position: relative;
+            width: 100%;
+            margin-left: 12%;
+        }
+        .tile-image {
+            height: 231px;
+            width: 332px;
+            margin-right: 20px;
+        }
+        .container1 p {
+            color: rgba(115, 115, 115, 1);
+            margin-top: -20px;
+            position: absolute;
+            bottom: 80%;
+            margin-left: 1em;
+        }
+        .container1 h3 {
+            color: black;
+            margin-top: 2em;
+            position: absolute;
+            bottom: 50%;
+            color: rgba(37, 43, 66, 1);
+        }
+        .container1 aside {
+            color: rgba(37, 43, 66, 1);
+            margin-top: 2em;
+            position: absolute;
+            bottom: 35%;
+            font-size: 0.75rem;
+        }
+
+        
+
+        
+    .container {
+      display: flex;
+      gap: 10px;
+      margin-left: 12%;
+      margin-top: 5em;
+      background-color: white;
+    }
+
+   .marmita {
+    width: 389px;
+    height: 798px;
+   }
+
+    img {
+      width: 189px;
+      height: 162px;
+      
+    }
+
+    p {
+      margin-left: 35%;
+    }
+
+    .container_novo {
+      display: flex;
+      margin-left: 4em;
+      margin-top: 4em;
+      
+    }
+
+    .container_master {
+      flex-direction: column;
+      width: 657px;
+      height: 727px;
+    }
+
+    .container2 {
+      display: flex;
+      margin-left: 4em;
+    }
+
+    .linha {
+        display: flex;
+        gap: 20px;
+        margin-left: 3em;
+        margin-bottom: 4em;
+        width: 658px;
+        height: 50px;
+    }
+
+    .linha aside {
+        display: flex;
+    }
+    .container_novo p {
+        left: 90%;
+        color: rgb(17, 238, 36);  
+    }
+
+    .container_novo span {
+        color: rgba(37, 43, 66, 1);
+    }
+    .container2 p {
+        left: 90%;
+        color: rgb(17, 238, 36);
+    }
+
+    .container2 span {
+        color: rgba(37, 43, 66, 1);
+    }
+
+    .container2 aside {
+        font-size: 18px;
+        margin-left: 40%;
+        color: rgba(115, 115, 115, 1);
+    }
+
+    .container_novo aside {
+        font-size: 18px;
+        margin-left: 40%;
+        color: rgba(115, 115, 115, 1);
+    }
+
+    #preco span {
+        color: rgba(115, 115, 115, 1);
+    }
+
+    .container2 img {
+        margin-left: 1em;
+    }
+
+    .container_novo img {
+        margin-left: 1em;
+    }
+    .groceries {
+        width: 1440px;
+        height: 939px;
+    }
+    </style>
 </head>
 <body>
-    <nav>
-        <a href="#">Home</a>
-        <a href="adicionar_produto.html" target="_blank">Compras</a>
-        <a href="#">Sobre</a>
-        <a href="#faleconosco">Contato</a>
-        <a href="login.html">Login</a>
-        <a href="#" id="meuCarrinho">Meu Carrinho</a>
-    </nav>
-    <!-- Carrossel -->
-    <section id="carrinho" style="display: none;">
-        <ul id="listaItensCarrinho">
-            <li>Coca-cola</li>
-            <li>Batata-frita</li>
-        </ul>
-    </section>
-    <section id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          
-        </ol>
-    <!-- Itens do carrossel -->
-        <section class="carousel-inner">
-          <section class="carousel-item active">
-            <!-- 1ª Imagem do carrossel -->
-            <img src="imagens/fast_food.jpg" class="d-block w-100" alt="lanche">
-                <h1>EMPÓRIO DELIVERY<br /></h1>   
-          </section>
-          <!-- 2º item do carrossel --> 
-          <section class="carousel-item">
-            <!-- 2ª Imagem do carrossel -->
-            <img src="imagens/moto.jpg" class="d-block w-100" alt="moto">
-                <p>PRODUTOS SELECIONADOS NA PALMA DA SUA MÃO<br /></p>
-          </section>
-        </section>
-        <!-- Controles do carrossel -->
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-          <i class="carousel-control-prev-icon" aria-hidden="true"></i>
-          <button class="sr-only">Previous</button>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-          <i class="carousel-control-next-icon" aria-hidden="true"></i>
-          <button class="sr-only">Next</button>
-        </a>
-    </section>
     <section>
-        <img src="imagens/imagem_cadastro.jpg" class="imagem_cadastro"/>
-            <div class="passo">
-                <h2>Veja como é fácil fazer seu pedido:</h2>
-                
-                    <h3>1.Realize seu cadastro</h3>
-                    <h3>2.Busque seu produto</h3>
-                    <h3>3.Confirme o pagamento</h3>
-                    <h3>4.Pronto! Agora é só esperar seu pedido chegar!</h3>
-            </div>
+        <div class="principal">
+            <img class="groceries" src="imagens/groceries.svg" alt="groceries">
+        </div>
     </section>
-    <section>
-        <section class="grupo-produtos">
-            
-            <img src="imagens/donut.jpg" class="donut"/>
-            
-            <section id="carouselExampleControls2" class="carousel slide" data-ride="carousel">
-                <section class="carousel-inner">
-                    <section class="carousel-item active">
-                        <img src="imagens/macarrao.jpg" class="macarrao" alt="Macarrão Barilla">
-                            <aside>Macarrão Barilla: R$6,49</aside>
-                        <img src="imagens/azeite.jpg" class="azeite" alt="Azeite Andorinha">
-                            <aside>Azeite Andorinha: R$38,99</aside>
-                    </section>
-                    <section class="carousel-item">
-                        <img src="imagens/oleo_coco.jpg" class="oleo" alt="Óleo de Coco">
-                            <aside>Óleo de coco: R$25,00</aside>
-                        <img src="imagens/detergente.jpg" class="detergente" alt="Detergente">
-                            <aside>Detergente Ypê: R$2,19</aside>
-                    </section>
-                </section>
+    <div class="container1">
+        
+        <div class="esquerda">
+            <img class="tile-image" src="imagens/caramelo.svg" alt="caramelo">
+            <p>Your Space</p>
+            <h3><strong>Unique Life</strong></h3>
+            <aside>Explore Items</aside>
+        </div>
+        <div class="centro">
+            <img class="tile-image" src="imagens/maca.svg" alt="maca">  
+            <p>Your Space</p>
+            <h3><strong>Elemens Style</strong></h3>
+            <aside>Explore Items</aside>
+        </div>
+        <div class="direita">
+            <img class="tile-image" src="imagens/carne.svg" alt="carne"> 
+            <p>your space</p>
+            <h3><strong>Elements Style</strong></h3>
+            <aside>Explore Items</aside>
+        </div>
+    </div>
+    
+    <div class="container">
+        <img class="marmita" src="imagens/marmita.svg" alt="marmita">
+        <div class="container_master">
+            <section class="linha">
+                <aside><strong>BESTSELLER PRODOCUTS</strong></aside>
+                <aside>Men</aside>
+                <aside>Women</aside>
+                <aside>Acessories</aside>
             </section>
-        </section>  
-    </section>
-    <section id="faleconosco">
-        <h2>Fale conosco</h2>
-        <form id="meuFormulario" action="dosomething.html" method="POST">
-            <p class="campos">
-                <label for="name" class="label-standard">Nome</label>
-                <input type="text" id="name" name="name" required />
-            </p>
-            <p class="campos">
-                <label for="email" class="label-standard">Email</label> 
-                <input type="email" id="email" name="email" />    
-            </p>
-            <p class="campos">
-                <label for="motivodocontato" class="label-standard">Qual o motivo do 
-                contato?</label>
-                <select id="motivodocontato" name="motivodocontato">  
-                    <option value="duvidas">Dúvidas</option>
-                    <option value="reclamacoes">Reclamações</option>
-                    <option value="outros">Outros assuntos</option>
-                </select>
-            </p>
-            <p class="campos">
-                <label for="comentarios" class="label-standard">Comentários</label>
-                <textarea id="comentarios" name="comentarios" rows="3"></textarea>  
-            </p>
-            <button id="enviar" >Enviar</button>
-            <fieldset class="resumo-fieldset">
-                <legend>Nossos endereços</legend>
-                <p>
-                    <label for="contatolinha1"><strong>Rua dos sabiás, 100 
-                    - São Paulo/SP</strong></label>   
-                </p>
-                <p>
-                    <label for="contatolinha2"><strong>Rua Francisco Moreira, 
-                    660 - Fortaleza/CE</strong></label>  
-                </p>
-            </fieldset>
-            </form>
-    </section>
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+            <div class="container2"> 
+                <div class="one">
+                    <img src="imagens/caramelo2.svg" alt="caramelo">
+                    <p><strong><span>Graphic Design</span></strong></p>
+                    <aside>English Department</aside>
+                    <p id="preco"><span>$16.48</span>$6.48</p>
+                </div>
+                <div class="two">
+                <img src="imagens/maca2.svg" alt="maca">
+                    <p><strong><span>Graphic Design</span></strong></p>
+                    <aside>English Department</aside>
+                    <p id="preco"><span>$16.48</span>$6.48</p>
+                </div>
+                <div class="three">
+                <img src="imagens/carne2.svg" alt="carne">
+                    <p><strong><span>Graphic Design</span></strong></p>
+                    <aside>English Department</aside>
+                    <p id="preco"><span>$16.48</span>$6.48</p>
+                </div>
+            </div>
+
+      
+            <div class="container_novo">
+                <div class="four">
+                    <img src="imagens/caramelo2.svg" alt="caramelo">
+                    <p><strong><span>Graphic Design</span></strong></p>
+                    <aside>English Department</aside>
+                    <p id="preco"><span>$16.48</span>$6.48</p>
+                </div>
+                <div class="five">
+                    <img src="imagens/maca2.svg" alt="maca">
+                    <p><strong><span>Graphic Design</span></strong></p>
+                    <aside>English Department</aside>
+                    <p id="preco"><span>$16.48</span>$6.48</p>
+                </div>
+                <div class="six">
+                    <img src="imagens/carne2.svg" alt="carne">
+                    <p><strong><span>Graphic Design</span></strong></p>
+                    <aside>English Department</aside>
+                    <p id="preco"><span>$16.48</span>$6.48</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
